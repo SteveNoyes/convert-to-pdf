@@ -53,9 +53,9 @@ I want to test css property transfer from web to pdf
 
 ### Useful resources
 
-- [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+- [PDF Debug](https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js)
 
-- [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+- [jsPDF](https://github.com/parallax/jsPDF)
 
 - [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
 
