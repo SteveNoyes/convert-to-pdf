@@ -5,15 +5,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>html to pdf</title>
+  <!-- Stylesheet for Printed Version -->
+  <!-- <link rel="stylesheet" type="text/css" media="print" href="print.css"> -->
+  <style>
+
+
+    .wrapper {
+        width: 100%!important;
+        line-height: 1.2;
+        border: 1px solid red;
+      }
+
+      .page-one {
+        font-size: 16px;
+        border: 1px solid blue;
+      }
+
+      .page-one-footer {
+        padding-top: 2.3vw;
+        border: 1px solid green;
+      }
+
+      .page-two {
+        font-size: 14px;
+        border: 1px solid pink;
+      }
+
+      .page-two-footer {
+        padding-bottom: 2vw;
+        border: 1px solid brown;
+      }
+
+
+
+    @media print {
+      @page {
+        margin: 0mm 0mm 0mm 0mm;
+      }
+
+      /* .wrapper {
+        width: 100%!important;
+        line-height: 1.2;
+        border: 1px solid red;
+      }
+
+      .page-one {
+        font-size: 16px;
+        border: 1px solid blue;
+      }
+
+      .page-one-footer {
+        padding-top: 2.3vw;
+        border: 1px solid green;
+      }
+
+      .page-two {
+        font-size: 14px;
+        border: 1px solid pink;
+      }
+
+      .page-two-footer {
+        padding-bottom: 2vw;
+        border: 1px solid brown;
+      } */
+
+    }
+  </style>
 </head>
 <body>
   <body>
-    <div id="content"> 
-      <h1>Lorem ipsum dolor sit.</h1> 
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus consectetur sit voluptate soluta, repudiandae necessitatibus doloribus sunt accusamus ut?</p> 
+    <div class="wrapper" id="content">
+      <div class="page-one">
+        <div> 
+          <h1>Lorem ipsum dolor sit.</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus consectetur sit voluptate soluta, repudiandae necessitatibus doloribus sunt accusamus ut?</p> 
+        </div>
+        <div id="page"></div> 
+        <div class="page-one-footer">
+          <p>footer content</p>
+        </div>
+      </div>
+      <div class="page-two">
+        <div> 
+          <h1>Lorem ipsum dolor sit.</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus consectetur sit voluptate soluta, repudiandae necessitatibus doloribus sunt accusamus ut?</p> 
+        </div>
+        <div class="page-two-footer">
+          <button id="submit">Export as PDF</button>
+        </div>
+      </div>
     </div>
-    <div id="page"></div> 
-    <button id="submit">Export as PDF</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
   </body>

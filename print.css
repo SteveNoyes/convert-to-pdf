@@ -1,0 +1,29 @@
+@page {
+  margin: 0mm 0mm 0mm 0mm;
+}
+
+.wrapper {
+  width: 100%!important;
+  line-height: 1.2;
+  border: 1px solid red;
+}
+
+.page-one {
+  font-size: 16px;
+  border: 1px solid blue;
+}
+
+.page-one-footer {
+  padding-top: 2.3vw;
+  border: 1px solid green;
+}
+
+.page-two {
+  font-size: 14px;
+  border: 1px solid pink;
+}
+
+.page-two-footer {
+  padding-bottom: 2vw;
+  border: 1px solid brown;
+}
